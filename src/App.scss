@@ -128,7 +128,10 @@
       
         background-color: transparent;
         color: $moderate-blue;        
+      }
 
+      .inputContainer button:hover{
+        color: $moderate-blue-hover;
       }
 
   // comment body
@@ -206,8 +209,16 @@
         color: $moderate-blue;
       }
       
+      .replyButton:hover, .editButton:hover{
+        color: $moderate-blue-hover;
+      }
+      
       .deleteButton{
         color: $soft-red;
+      }
+
+      .deleteButton:hover{
+        color: $soft-red-hover;
       }
   
     // Vote styles
