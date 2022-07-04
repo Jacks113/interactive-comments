@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgba(195, 195, 239, 0.342);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.App {
+  width: 70vw;
+  height: 100vh;
+  min-width: 800px;
+  min-height: 500px;
+  margin: auto;
+  overflow-y: auto;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment-container {
+  width: 90%;
+  height: 20%;
+  min-height: 150px;
+  min-width: 700px;
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  margin: 1em 1em 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.comments {
+  width: 100%;
+  height: 80%;
+  overflow: auto;
+}
+
+.inputContainer {
+  width: 90%;
+  height: 12%;
+  margin: auto;
+  background-color: white;
+  border-radius: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputContainer textarea {
+  width: 70%;
+  height: 40%;
+  resize: none;
+  border: 1px solid #00000033;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.inputContainer button {
+  width: 10%;
+  height: 40%;
+  border-radius: 1em;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 1em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: transparent;
+  color: #5457b6;
+}
+
+.commentBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reply {
+  width: 70%;
+  height: 20%;
+}
+
+.commentHead {
+  padding: 0 10px;
+  height: 30%;
+  justify-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.userName {
+  margin-right: 1em;
+  font-weight: 500;
+}
+
+.timePosted {
+  color: #67727e;
+  font-weight: 400;
+}
+
+.userName, .timePosted {
+  font-size: 1rem;
+}
+
+.commentHead-userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.replyButton, .deleteButton, .editButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.replyButton, .editButton {
+  color: #5457b6;
+}
+
+.deleteButton {
+  color: #ed6468;
+}
+
+.commentVote {
+  height: 90%;
+  width: 5%;
+  min-width: 30px;
+  background-color: rgba(195, 195, 239, 0.342);
+  font-size: 1em;
+  border-radius: 0.5em;
+  margin-left: 1rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.commentVote > button {
+  background-color: transparent;
+  border: none;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.commentVote p {
+  color: #5457b6;
+  font-weight: 700;
+}
+
+.commentHead, .commentContent {
+  width: 95%;
+  height: 100%;
+}
+
+.commentContent {
+  margin: auto 0;
+  padding: 0 10px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+/*# sourceMappingURL=App.css.map */
