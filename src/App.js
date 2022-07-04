@@ -1,11 +1,20 @@
 // Import css
   import "./App.css";
 
+// Main react components
+  import { useEffect } from "react";
+
 // Import components
   import Comment from './Components/Comment';
-import Input from "./Components/Input";
+  import Input from "./Components/Input";
+  import { hoverVoting } from "./Services/functions";
 
 function App() {
+
+  useEffect(() => {
+    hoverVoting(); 
+   
+  },[]);
 
   const userName1 = "amyrobson";
   const timePosted = "1 month ago";

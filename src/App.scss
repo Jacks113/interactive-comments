@@ -248,11 +248,13 @@
       .commentVote > button{
         background-color: transparent;
     
+        width: 100%;
         border: none;
         margin: 1rem 0;
     
         cursor: pointer;
       }
+
     
       .commentVote p{
         color: $moderate-blue;

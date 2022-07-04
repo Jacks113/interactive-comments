@@ -5,22 +5,14 @@ import { manageLikes } from "../Services/functions";
 export default function Comment(props){
 
     const {userName, timePosted, comment, liked, personal, replied} = props;
-
     const [likes, setLikes] = useState(liked);
-
-    
-
 
     if (!personal) {
         return  <div className= {replied ===true ? "comment-container reply" : "comment-container"}>
                 <div className="commentVote">
-                    <button className="upVote" onClick={ e =>{
-                        setLikes(parseInt(likes)  + parseInt(1))
-                    }}> <img alt="upVote"  src="/images/icon-plus.svg"/> </button>
+                    <button className="upVote" onClick={ e => manageLikes(likes, setLikes, 1) }>    <img alt="upVote" className="upVoteImage" src="/images/icon-plus.svg"/> </button>
                     <p>{likes}</p>
-                    <button className="downVote" onClick={ e =>{
-                        setLikes(parseInt(likes)  + parseInt(-1))
-                    }}> <img alt="downVote" src="/images/icon-minus.svg"/> </button>
+                    <button className="upVote" onClick={ e => manageLikes(likes, setLikes, -1) }> <img className="downVoteImage" alt="downVote" src="/images/icon-minus.svg"/> </button>
                 </div>
 
                 <div className="commentBody">
@@ -42,14 +34,11 @@ export default function Comment(props){
 
     else if (personal){
         return  <div  className={ replied === true ? "comment-container reply" : "comment-container "}>
-               <div className="commentVote">
-                    <button className="upVote" onClick={ e =>{
-                        setLikes(parseInt(likes)  + parseInt(1))
-                    }}> <img alt="upVote"  src="/images/icon-plus.svg"/> </button>
+                <div className="commentVote">
+                    <button className="upVote" onClick={ e => manageLikes(likes, setLikes, 1) }> 
+                        <img className="upVoteImage" alt="upVote"  src="/images/icon-plus.svg"/> </button>
                     <p>{likes}</p>
-                    <button className="downVote" onClick={ e =>{
-                        setLikes(parseInt(likes)  + parseInt(-1))
-                    }}> <img alt="downVote" src="/images/icon-minus.svg"/> </button>
+                    <button className="downVote" onClick={ e => manageLikes(likes, setLikes, -1) }> <img className="downVoteImage" alt="downVote" src="/images/icon-minus.svg"/> </button>
                 </div>
 
                 <div className="commentBody">
