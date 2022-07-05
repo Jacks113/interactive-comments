@@ -270,8 +270,29 @@ body {
     height: 85%;
     margin-top: 5%;
   }
+  .userName, .timePosted {
+    font-size: 0.95em;
+  }
+  .userName {
+    font-weight: bolder;
+  }
+  .reply {
+    font-size: 0.9em;
+    width: 84%;
+    height: 20%;
+  }
   .comment-container {
     min-width: 100px;
+  }
+  .replyButton img, .deleteButton img, .editButton img {
+    height: 20%;
+  }
+  .commentHead, .commentContent {
+    width: 95%;
+    height: 40%;
+  }
+  .commentContent {
+    margin: 0 0;
   }
   .inputContainer {
     height: 7%;
