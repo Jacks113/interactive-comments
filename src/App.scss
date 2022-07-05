@@ -311,9 +311,12 @@
     min-width: 100px;
   }
 
+  .replyButton, .deleteButton, .editButton {
+    font-size: 0.7em;
+  }
+
   .replyButton img, .deleteButton img, .editButton img{
     height: 20%;
-    font-size: 0.7em;
   }
 
 
