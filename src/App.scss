@@ -193,6 +193,7 @@
       
       display: flex;
       flex-direction: row;
+      align-items: center;
       justify-content: space-evenly;
     }
 
@@ -337,5 +338,11 @@
     padding: 0 5px;
     overflow: hidden;
     border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .replyButton, .deleteButton, .editButton {
+    font-size: 0.7em;
   }
 }
