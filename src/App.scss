@@ -277,3 +277,35 @@
   }
 
   
+
+@media only screen and (max-width: 700px){
+  body{
+    font-size: 12px;
+  }
+  .App{
+    min-width: 300px;
+    width: 99vw;
+  }
+  .comments{
+    height: 85%;
+    margin-top: 5%;
+  }
+
+  .comment-container{
+    min-width: 100px;
+  }
+
+  .inputContainer{
+    height: 7%;
+  }
+  
+  .inputContainer img{
+    height: 70%;
+  }
+  .inputContainer textarea{
+    height: 70%;
+    padding: 0 5px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+}
