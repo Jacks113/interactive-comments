@@ -313,6 +313,7 @@
 
   .replyButton img, .deleteButton img, .editButton img{
     height: 20%;
+    font-size: 0.7em;
   }
 
 
@@ -341,8 +342,3 @@
   }
 }
 
-@media only screen and (max-width: 400px){
-  .replyButton, .deleteButton, .editButton {
-    font-size: 0.7em;
-  }
-}
